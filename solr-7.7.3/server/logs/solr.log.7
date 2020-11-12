@@ -1,0 +1,751 @@
+2020-11-10 12:09:06.958 INFO  (main) [   ] o.e.j.u.log Logging initialized @1281ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-11-10 12:09:07.217 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-11-10 12:09:07.230 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_242-b08
+2020-11-10 12:09:07.268 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/admininno/solr-7.7.3/server/contexts/] at interval 0
+2020-11-10 12:09:07.707 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-11-10 12:09:07.724 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-11-10 12:09:07.724 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-11-10 12:09:07.727 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2020-11-10 12:09:07.896 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-11-10 12:09:07.913 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.3
+2020-11-10 12:09:07.913 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-11-10 12:09:07.914 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/admininno/solr-7.7.3
+2020-11-10 12:09:07.917 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-11-10T12:09:07.917Z
+2020-11-10 12:09:07.958 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/admininno/solr-7.7.3
+2020-11-10 12:09:07.967 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/admininno/solr-7.7.3/solr.xml
+2020-11-10 12:09:08.066 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26, but no JMX reporters were configured - adding default JMX reporter.
+2020-11-10 12:09:08.561 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-11-10 12:09:09.286 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-11-10 12:09:09.291 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-11-10 12:09:09.530 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:09:09.531 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:09:09.546 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:09:09.681 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /home/admininno/solr-7.7.3
+2020-11-10 12:09:09.682 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [db, films]
+2020-11-10 12:09:09.704 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader [null] Added 2 libs to classloader, from paths: [/home/admininno/solr-7.7.3/example/example-DIH/solr/db/lib]
+2020-11-10 12:09:09.899 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrResourceLoader [films] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:09:09.939 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@45b4c3a9{/solr,file:///home/admininno/solr-7.7.3/server/solr-webapp/webapp/,AVAILABLE}{/home/admininno/solr-7.7.3/server/solr-webapp/webapp}
+2020-11-10 12:09:10.005 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@422c3c7a{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2020-11-10 12:09:10.006 INFO  (main) [   ] o.e.j.s.Server Started @4331ms
+2020-11-10 12:09:10.415 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader [db] Added 53 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/contrib/velocity/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:09:10.438 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:09:10.562 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-11-10 12:09:10.575 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:09:10.892 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-11-10 12:09:10.942 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.IndexSchema [db] Schema name=example-DIH-db
+2020-11-10 12:09:11.428 WARN  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-11-10 12:09:12.552 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:09:12.552 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-11-10 12:09:12.651 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.CoreContainer Creating SolrCore 'films' using configuration from instancedir /home/admininno/solr-7.7.3/films, trusted=true
+2020-11-10 12:09:12.668 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.CoreContainer Creating SolrCore 'db' using configuration from instancedir /home/admininno/solr-7.7.3/example/example-DIH/solr/db, trusted=true
+2020-11-10 12:09:12.716 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:09:12.717 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:09:12.752 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/example/example-DIH/solr/db], dataDir=[/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/]
+2020-11-10 12:09:12.756 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/films], dataDir=[/home/admininno/solr-7.7.3/films/data/]
+2020-11-10 12:09:12.904 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:09:12.906 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:09:13.979 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:09:13.980 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:09:13.982 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:09:13.982 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:09:14.024 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:09:14.024 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:09:14.044 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:09:14.044 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:09:14.116 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@5f5e9c67
+2020-11-10 12:09:14.117 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db, tag=5f5e9c67
+2020-11-10 12:09:14.118 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@3826b27b: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db / com.codahale.metrics.MetricRegistry@32d82535
+2020-11-10 12:09:14.178 ERROR (coreContainerWorkExecutor-2-thread-1) [   ] o.a.s.c.CoreContainer Error waiting for SolrCore to be loaded on startup
+org.apache.solr.common.SolrException: Unable to create core [db]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1208) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197) ~[metrics-core-3.2.6.jar:3.2.6]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_242]
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209) ~[solr-solrj-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:34]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_242]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_242]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_242]
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	... 7 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	... 7 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187) ~[solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	... 7 more
+2020-11-10 12:09:14.201 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@66fd88ea[films] main]
+2020-11-10 12:09:14.223 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/films/conf
+2020-11-10 12:09:14.257 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:09:14.268 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:09:14.338 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter SolrIndexWriter was not closed prior to finalize(), indicates a bug -- POSSIBLE RESOURCE LEAK!!!
+2020-11-10 12:09:14.338 ERROR (Finalizer) [   ] o.a.s.u.SolrIndexWriter Error closing IndexWriter
+java.lang.NullPointerException: null
+	at org.apache.lucene.index.IndexWriter.doFlush(IndexWriter.java:3626) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.IndexWriter.flush(IndexWriter.java:3586) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1036) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1079) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+	at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:286) [solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at org.apache.solr.update.SolrIndexWriter.finalize(SolrIndexWriter.java:342) [solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+	at java.lang.System$2.invokeFinalize(System.java:1275) [?:1.8.0_242]
+	at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:102) [?:1.8.0_242]
+	at java.lang.ref.Finalizer.access$100(Finalizer.java:34) [?:1.8.0_242]
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:217) [?:1.8.0_242]
+	Suppressed: java.lang.NullPointerException
+		at org.apache.lucene.index.IndexWriter.rollbackInternalNoCommit(IndexWriter.java:2310) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+		at org.apache.lucene.index.IndexWriter.rollbackInternal(IndexWriter.java:2288) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+		at org.apache.lucene.index.IndexWriter.shutdown(IndexWriter.java:1043) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+		at org.apache.lucene.index.IndexWriter.close(IndexWriter.java:1079) ~[lucene-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:31:55]
+		at org.apache.solr.update.SolrIndexWriter.close(SolrIndexWriter.java:286) [solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+		at org.apache.solr.update.SolrIndexWriter.finalize(SolrIndexWriter.java:342) [solr-core-7.7.3.jar:7.7.3 1a0d2a901dfec93676b0fe8be425101ceb754b85 - noble - 2020-04-21 10:37:32]
+		at java.lang.System$2.invokeFinalize(System.java:1275) [?:1.8.0_242]
+		at java.lang.ref.Finalizer.runFinalizer(Finalizer.java:102) [?:1.8.0_242]
+		at java.lang.ref.Finalizer.access$100(Finalizer.java:34) [?:1.8.0_242]
+		at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:217) [?:1.8.0_242]
+2020-11-10 12:09:14.345 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:09:14.351 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975127608754176
+2020-11-10 12:09:14.358 INFO  (searcherExecutor-10-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@66fd88ea[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:09:14.358 INFO  (searcherExecutor-10-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:09:14.358 INFO  (searcherExecutor-10-thread-1-processing-x:films) [   x:films] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:09:14.382 INFO  (searcherExecutor-10-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@66fd88ea[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:09:19.628 INFO  (qtp898557489-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010159254} status=0 QTime=4
+2020-11-10 12:09:19.687 INFO  (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010159255} status=0 QTime=58
+2020-11-10 12:09:19.700 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010159255} status=0 QTime=73
+2020-11-10 12:09:29.339 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:09:29.369 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=29
+2020-11-10 12:09:29.377 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=33
+2020-11-10 12:09:39.977 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:09:39.998 INFO  (qtp898557489-16) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010168993&ts=1605010168993} status=503 QTime=12
+2020-11-10 12:09:40.001 INFO  (qtp898557489-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010179821} status=0 QTime=20
+2020-11-10 12:09:40.010 INFO  (qtp898557489-14) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010179821} status=0 QTime=30
+2020-11-10 12:09:40.037 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=56
+2020-11-10 12:09:40.040 INFO  (qtp898557489-12) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1605010179821} status=0 QTime=54
+2020-11-10 12:09:42.326 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:09:42.367 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=41
+2020-11-10 12:09:42.371 INFO  (qtp898557489-40) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010179821} status=0 QTime=43
+2020-11-10 12:09:43.313 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:09:43.321 INFO  (qtp898557489-17) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010179821} status=0 QTime=1
+2020-11-10 12:09:43.323 INFO  (qtp898557489-18) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010168993&ts=1605010168993} status=503 QTime=0
+2020-11-10 12:09:43.326 INFO  (qtp898557489-15) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010179821} status=0 QTime=8
+2020-11-10 12:09:43.372 INFO  (qtp898557489-12) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1605010179821} status=0 QTime=51
+2020-11-10 12:09:43.380 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=65
+2020-11-10 12:09:44.045 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:09:44.060 INFO  (qtp898557489-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010179821} status=0 QTime=12
+2020-11-10 12:09:44.071 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=22
+2020-11-10 12:11:52.911 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:52.924 INFO  (qtp898557489-12) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=1
+2020-11-10 12:11:52.960 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=40
+2020-11-10 12:11:52.981 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:52.985 INFO  (qtp898557489-40) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=0
+2020-11-10 12:11:53.011 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=28
+2020-11-10 12:11:54.194 INFO  (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:54.202 INFO  (qtp898557489-40) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010179821} status=0 QTime=3
+2020-11-10 12:11:54.218 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=22
+2020-11-10 12:11:55.699 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:55.703 INFO  (qtp898557489-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010179821} status=0 QTime=0
+2020-11-10 12:11:55.708 INFO  (qtp898557489-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010179821} status=0 QTime=1
+2020-11-10 12:11:55.715 INFO  (qtp898557489-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010168993&ts=1605010168993} status=503 QTime=0
+2020-11-10 12:11:55.729 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=29
+2020-11-10 12:11:55.755 INFO  (qtp898557489-14) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1605010179821} status=0 QTime=45
+2020-11-10 12:11:57.670 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:57.673 INFO  (qtp898557489-12) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=0
+2020-11-10 12:11:57.700 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=30
+2020-11-10 12:11:57.715 INFO  (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:57.717 INFO  (qtp898557489-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=0
+2020-11-10 12:11:57.753 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=36
+2020-11-10 12:11:58.419 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:58.433 INFO  (qtp898557489-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010179821} status=0 QTime=12
+2020-11-10 12:11:58.454 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=34
+2020-11-10 12:11:59.289 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:11:59.297 INFO  (qtp898557489-14) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010179821} status=0 QTime=3
+2020-11-10 12:11:59.329 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=39
+2020-11-10 12:12:00.035 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:12:00.040 INFO  (qtp898557489-40) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=2
+2020-11-10 12:12:00.054 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=17
+2020-11-10 12:12:00.072 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:12:00.074 INFO  (qtp898557489-12) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010312750} status=0 QTime=0
+2020-11-10 12:12:00.097 INFO  (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=23
+2020-11-10 12:12:05.097 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:12:05.140 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=41
+2020-11-10 12:12:05.141 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=40
+2020-11-10 12:12:08.189 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:12:08.196 INFO  (qtp898557489-21) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010179821} status=0 QTime=0
+2020-11-10 12:12:08.200 INFO  (qtp898557489-17) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010179821} status=0 QTime=1
+2020-11-10 12:12:08.205 INFO  (qtp898557489-14) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010168993&ts=1605010168993} status=503 QTime=0
+2020-11-10 12:12:08.234 INFO  (qtp898557489-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1605010179821} status=0 QTime=32
+2020-11-10 12:12:08.241 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=48
+2020-11-10 12:12:17.045 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010168993} status=0 QTime=0
+2020-11-10 12:12:17.054 ERROR (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:12:17.054 ERROR (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:12:17.056 ERROR (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:12:17.057 ERROR (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:12:17.078 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010168993} status=0 QTime=33
+2020-11-10 12:13:46.787 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010426394} status=0 QTime=0
+2020-11-10 12:13:46.790 ERROR (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:13:46.793 ERROR (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:13:46.794 ERROR (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:13:46.797 ERROR (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall null:org.apache.solr.core.SolrCoreInitializationException: SolrCore 'db' is not available due to init failure: Error opening new searcher
+	at org.apache.solr.core.CoreContainer.getCore(CoreContainer.java:1653)
+	at org.apache.solr.servlet.HttpSolrCall.init(HttpSolrCall.java:251)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:491)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:395)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:341)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1602)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:540)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:146)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:548)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:257)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1588)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:255)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1345)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:203)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:480)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1557)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:201)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1247)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:144)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:220)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:126)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:335)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:132)
+	at org.eclipse.jetty.server.Server.handle(Server.java:502)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:364)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:260)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:305)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:118)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:333)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:310)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:168)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:126)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:366)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:765)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$2.run(QueuedThreadPool.java:683)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:1048)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:874)
+	at org.apache.solr.core.CoreContainer.createFromDescriptor(CoreContainer.java:1187)
+	at org.apache.solr.core.CoreContainer.lambda$load$13(CoreContainer.java:699)
+	at com.codahale.metrics.InstrumentedExecutorService$InstrumentedCallable.call(InstrumentedExecutorService.java:197)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at org.apache.solr.common.util.ExecutorUtil$MDCAwareThreadPoolExecutor.lambda$execute$0(ExecutorUtil.java:209)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: org.apache.solr.common.SolrException: Error opening new searcher
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2137)
+	at org.apache.solr.core.SolrCore.getSearcher(SolrCore.java:2257)
+	at org.apache.solr.core.SolrCore.initSearcher(SolrCore.java:1106)
+	at org.apache.solr.core.SolrCore.<init>(SolrCore.java:993)
+	... 9 more
+Caused by: org.apache.lucene.index.IndexFormatTooNewException: Format version is not supported (resource BufferedChecksumIndexInput(MMapIndexInput(path="/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/index/segments_3"))): 10 (needs to be between 6 and 9)
+	at org.apache.lucene.codecs.CodecUtil.checkHeaderNoMagic(CodecUtil.java:216)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:307)
+	at org.apache.lucene.index.SegmentInfos.readCommit(SegmentInfos.java:291)
+	at org.apache.lucene.index.IndexWriter.<init>(IndexWriter.java:845)
+	at org.apache.solr.update.SolrIndexWriter.<init>(SolrIndexWriter.java:124)
+	at org.apache.solr.update.SolrIndexWriter.create(SolrIndexWriter.java:97)
+	at org.apache.solr.update.DefaultSolrCoreState.createMainIndexWriter(DefaultSolrCoreState.java:257)
+	at org.apache.solr.update.DefaultSolrCoreState.getIndexWriter(DefaultSolrCoreState.java:131)
+	at org.apache.solr.core.SolrCore.openNewSearcher(SolrCore.java:2098)
+	... 12 more
+
+2020-11-10 12:13:46.823 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010426395} status=0 QTime=18
+2020-11-10 12:13:51.345 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010426394} status=0 QTime=0
+2020-11-10 12:13:51.395 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010426395} status=0 QTime=47
+2020-11-10 12:13:51.403 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010426395} status=0 QTime=56
+2020-11-10 12:14:33.954 INFO  (qtp898557489-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010473628} status=0 QTime=0
+2020-11-10 12:14:33.981 INFO  (qtp898557489-40) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010473628} status=0 QTime=25
+2020-11-10 12:14:33.989 INFO  (qtp898557489-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010473628} status=0 QTime=33
+2020-11-10 12:15:06.910 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@422c3c7a{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2020-11-10 12:15:06.910 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-11-10 12:15:06.912 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1989811701
+2020-11-10 12:15:06.915 INFO  (coreCloseExecutor-20-thread-1) [   x:films] o.a.s.c.SolrCore [films]  CLOSING SolrCore org.apache.solr.core.SolrCore@4ccf56ad
+2020-11-10 12:15:06.915 INFO  (coreCloseExecutor-20-thread-1) [   x:films] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.films, tag=4ccf56ad
+2020-11-10 12:15:06.915 INFO  (coreCloseExecutor-20-thread-1) [   x:films] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@75c94bc2: rootName = null, domain = solr.core.films, service url = null, agent id = null] for registry solr.core.films / com.codahale.metrics.MetricRegistry@7d09c057
+2020-11-10 12:15:07.004 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-11-10 12:15:07.004 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7a560583: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@144501b
+2020-11-10 12:15:07.010 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-11-10 12:15:07.010 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2101b44a: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@6c8e6bfa
+2020-11-10 12:15:07.013 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-11-10 12:15:07.013 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2cc3ad05: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@46170f27
+2020-11-10 12:15:07.027 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@45b4c3a9{/solr,null,UNAVAILABLE}{/home/admininno/solr-7.7.3/server/solr-webapp/webapp}

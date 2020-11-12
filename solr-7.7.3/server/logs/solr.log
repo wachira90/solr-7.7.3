@@ -1,0 +1,1145 @@
+2020-11-10 12:15:55.791 INFO  (main) [   ] o.e.j.u.log Logging initialized @1246ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-11-10 12:15:56.049 WARN  (main) [   ] o.e.j.s.AbstractConnector Ignoring deprecated socket close linger time
+2020-11-10 12:15:56.060 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.14.v20181114; built: 2018-11-14T21:20:31.478Z; git: c4550056e785fb5665914545889f21dc136ad9e6; jvm 1.8.0_242-b08
+2020-11-10 12:15:56.098 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/admininno/solr-7.7.3/server/contexts/] at interval 0
+2020-11-10 12:15:56.546 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-11-10 12:15:56.563 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-11-10 12:15:56.563 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-11-10 12:15:56.567 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-11-10 12:15:56.733 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-11-10 12:15:56.744 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 7.7.3
+2020-11-10 12:15:56.745 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-11-10 12:15:56.745 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/admininno/solr-7.7.3
+2020-11-10 12:15:56.746 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-11-10T12:15:56.746Z
+2020-11-10 12:15:56.792 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /home/admininno/solr-7.7.3
+2020-11-10 12:15:56.801 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/admininno/solr-7.7.3/solr.xml
+2020-11-10 12:15:56.892 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26, but no JMX reporters were configured - adding default JMX reporter.
+2020-11-10 12:15:57.471 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-11-10 12:15:58.184 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-11-10 12:15:58.189 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-11-10 12:15:58.419 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:15:58.426 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:15:58.447 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:15:58.546 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /home/admininno/solr-7.7.3
+2020-11-10 12:15:58.547 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [db, films]
+2020-11-10 12:15:58.581 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader [null] Added 2 libs to classloader, from paths: [/home/admininno/solr-7.7.3/example/example-DIH/solr/db/lib]
+2020-11-10 12:15:58.728 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrResourceLoader [films] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:15:58.759 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@45b4c3a9{/solr,file:///home/admininno/solr-7.7.3/server/solr-webapp/webapp/,AVAILABLE}{/home/admininno/solr-7.7.3/server/solr-webapp/webapp}
+2020-11-10 12:15:58.811 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@167559f3{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2020-11-10 12:15:58.812 INFO  (main) [   ] o.e.j.s.Server Started @4269ms
+2020-11-10 12:15:59.131 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader [db] Added 53 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/contrib/velocity/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:15:59.176 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:15:59.284 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-11-10 12:15:59.315 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:15:59.900 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.IndexSchema [db] Schema name=example-DIH-db
+2020-11-10 12:15:59.906 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-11-10 12:16:00.034 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=111
+2020-11-10 12:16:00.184 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=255
+2020-11-10 12:16:00.191 INFO  (qtp898557489-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=263
+2020-11-10 12:16:00.554 WARN  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrResourceLoader Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2020-11-10 12:16:01.582 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-11-10 12:16:01.583 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:16:01.674 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.CoreContainer Creating SolrCore 'films' using configuration from instancedir /home/admininno/solr-7.7.3/films, trusted=true
+2020-11-10 12:16:01.701 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.CoreContainer Creating SolrCore 'db' using configuration from instancedir /home/admininno/solr-7.7.3/example/example-DIH/solr/db, trusted=true
+2020-11-10 12:16:01.710 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:16:01.712 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:16:01.741 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/films], dataDir=[/home/admininno/solr-7.7.3/films/data/]
+2020-11-10 12:16:01.743 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/example/example-DIH/solr/db], dataDir=[/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/]
+2020-11-10 12:16:01.845 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:16:02.075 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:16:03.088 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:16:03.088 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:16:03.096 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:16:03.097 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:16:03.150 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:16:03.151 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:16:03.154 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:16:03.154 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:16:03.197 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@556ae0dd[db] main]
+2020-11-10 12:16:03.203 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@c560896[films] main]
+2020-11-10 12:16:03.217 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf
+2020-11-10 12:16:03.217 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/films/conf
+2020-11-10 12:16:03.259 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:16:03.259 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:16:03.276 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:16:03.282 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:16:03.302 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-11-10 12:16:03.314 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:16:03.329 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:16:03.345 INFO  (coreLoadExecutor-9-thread-2) [   x:films] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975556468998144
+2020-11-10 12:16:03.361 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@c560896[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:16:03.361 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:16:03.362 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:16:03.402 INFO  (searcherExecutor-11-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@c560896[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:16:03.404 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:16:03.406 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@18f984e1, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2020-11-10 12:16:03.406 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf/elevate.xml
+2020-11-10 12:16:03.441 INFO  (coreLoadExecutor-9-thread-1) [   x:db] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:16:03.458 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@556ae0dd[db] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:16:03.586 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.c.S.Request [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=125
+2020-11-10 12:16:03.588 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:16:03.588 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:16:03.588 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-11-10 12:16:03.588 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2020-11-10 12:16:03.588 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2020-11-10 12:16:03.621 INFO  (searcherExecutor-10-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@556ae0dd[db] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:16:03.694 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:16:03.698 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605010563540&since=0} status=0 QTime=2
+2020-11-10 12:16:03.720 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=26
+2020-11-10 12:16:04.886 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:16:04.932 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=43
+2020-11-10 12:16:04.935 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=47
+2020-11-10 12:16:07.965 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:16:07.982 INFO  (qtp898557489-16) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=18
+2020-11-10 12:16:07.986 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=8
+2020-11-10 12:16:07.993 INFO  (qtp898557489-20) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=33
+2020-11-10 12:16:08.014 INFO  (qtp898557489-14) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=50
+2020-11-10 12:16:08.024 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=64
+2020-11-10 12:16:11.872 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:16:11.875 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=2
+2020-11-10 12:16:11.920 INFO  (qtp898557489-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:16:11.924 INFO  (qtp898557489-18) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:11.949 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=77
+2020-11-10 12:16:11.974 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=53
+2020-11-10 12:16:12.004 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1605010571708} status=0 QTime=77
+2020-11-10 12:16:12.028 INFO  (qtp898557489-35) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:17.193 INFO  (qtp898557489-35) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:18.102 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-11-10 12:16:18.126 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-11-10 12:16:18.126 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-11-10 12:16:18.185 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1605010571708&verbose=true} status=0 QTime=85
+2020-11-10 12:16:18.188 INFO  (Thread-15) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-11-10 12:16:18.210 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:18.296 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-11-10 12:16:18.677 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity item with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-10 12:16:19.185 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:19.442 INFO  (Thread-15) [   ] h.d.H.ENGINE checkpointClose start
+2020-11-10 12:16:19.442 INFO  (Thread-15) [   ] h.d.H.ENGINE checkpointClose synched
+2020-11-10 12:16:19.513 INFO  (Thread-15) [   ] h.d.H.ENGINE checkpointClose script done
+2020-11-10 12:16:19.672 INFO  (Thread-15) [   ] h.d.H.ENGINE checkpointClose end
+2020-11-10 12:16:19.705 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 1027
+2020-11-10 12:16:19.741 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity feature with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-10 12:16:19.742 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 0
+2020-11-10 12:16:19.746 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity item_category with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-10 12:16:19.747 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 0
+2020-11-10 12:16:19.754 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity category with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-10 12:16:19.755 INFO  (Thread-15) [   ] o.a.s.h.d.JdbcDataSource Time taken for getConnection(): 1
+2020-11-10 12:16:20.099 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Import completed successfully
+2020-11-10 12:16:20.100 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 start commit{_version_=1682975574038937600,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-11-10 12:16:20.101 INFO  (Thread-15) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@26b8086f commitCommandVersion:1682975574038937600
+2020-11-10 12:16:21.120 INFO  (Thread-15) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@61ef953f[db] main]
+2020-11-10 12:16:21.125 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@61ef953f[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os.arch=amd64, java.runtime.version=1.8.0_242-b08, source=flush, os.version=3.10.0-957.el7.x86_64, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:16:21.125 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:16:21.147 INFO  (Thread-15) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-11-10 12:16:21.152 INFO  (searcherExecutor-10-thread-1) [   ] o.a.s.c.SolrCore [db] Registered new searcher Searcher@61ef953f[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os.arch=amd64, java.runtime.version=1.8.0_242-b08, source=flush, os.version=3.10.0-957.el7.x86_64, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:16:21.153 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-11-10 12:16:21.154 INFO  (Thread-15) [   ] o.a.s.h.d.SimplePropertiesWriter Wrote last indexed time to dataimport.properties
+2020-11-10 12:16:21.154 INFO  (Thread-15) [   ] o.a.s.h.d.DocBuilder Time taken = 0:0:2.856
+2020-11-10 12:16:21.154 INFO  (Thread-15) [   ] o.a.s.u.p.LogUpdateProcessorFactory [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1605010571708&verbose=true} status=0 QTime=85{deleteByQuery=*:* (-1682975572249018368),add=[6H500F0 (1682975573693956096), F8V7067-APL-KIT (1682975573857533952), IW-02 (1682975573864873984), MA147LL/A (1682975573885845504), TWINX2048-3200PRO (1682975573899476992), VS1GB400C3 (1682975573913108480), VDBDB1A16 (1682975573921497088), 3007WFP (1682975573928837120), VA902B (1682975573934080000), 0579B002 (1682975573941420032), ... (16 adds)],commit=} 0 3055
+2020-11-10 12:16:21.182 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:23.184 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:25.184 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:27.183 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:29.178 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605010571708} status=0 QTime=0
+2020-11-10 12:16:30.710 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:16:30.739 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=31
+2020-11-10 12:16:33.567 INFO  (qtp898557489-20) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/select params={q=*:*&_=1605010590527} hits=16 status=0 QTime=33
+2020-11-10 12:18:33.572 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=12
+2020-11-10 12:18:33.616 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=14
+2020-11-10 12:18:33.626 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=dbmysql&action=STATUS&wt=json} status=0 QTime=0
+2020-11-10 12:18:33.665 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.h.a.CoreAdminOperation core create command name=dbmysql&action=CREATE&instanceDir=dbmysql&wt=json
+2020-11-10 12:18:33.698 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.SolrResourceLoader [dbmysql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:18:33.754 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:18:33.827 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.s.IndexSchema [dbmysql] Schema name=default-config
+2020-11-10 12:18:34.258 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:18:34.323 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.CoreContainer Creating SolrCore 'dbmysql' using configuration from instancedir /home/admininno/solr-7.7.3/dbmysql, trusted=true
+2020-11-10 12:18:34.324 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbmysql' (registry 'solr.core.dbmysql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:18:34.324 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.SolrCore [[dbmysql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbmysql], dataDir=[/home/admininno/solr-7.7.3/dbmysql/data/]
+2020-11-10 12:18:34.396 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:18:34.488 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:18:34.488 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:18:34.491 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:18:34.491 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:18:34.495 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.s.SolrIndexSearcher Opening [Searcher@616682f8[dbmysql] main]
+2020-11-10 12:18:34.496 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbmysql/conf
+2020-11-10 12:18:34.497 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:18:34.497 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:18:34.499 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:18:34.500 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975714967552000
+2020-11-10 12:18:34.503 INFO  (searcherExecutor-20-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@616682f8[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:18:34.503 INFO  (searcherExecutor-20-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:18:34.503 INFO  (searcherExecutor-20-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:18:34.507 INFO  (searcherExecutor-20-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql] Registered new searcher Searcher@616682f8[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:18:34.509 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=dbmysql&action=CREATE&instanceDir=dbmysql&wt=json} status=0 QTime=843
+2020-11-10 12:18:59.382 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrResourceLoader Written confile configoverlay.json
+2020-11-10 12:18:59.451 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrResourceLoader [dbmysql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:18:59.503 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:18:59.553 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.IndexSchema [dbmysql] Schema name=default-config
+2020-11-10 12:18:59.975 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:19:00.010 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.CoreContainer Reloading SolrCore 'dbmysql' using configuration from instancedir /home/admininno/solr-7.7.3/dbmysql
+2020-11-10 12:19:00.040 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbmysql' (registry 'solr.core.dbmysql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:19:00.040 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrCore [[dbmysql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbmysql], dataDir=[/home/admininno/solr-7.7.3/dbmysql/data/]
+2020-11-10 12:19:00.046 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:19:00.121 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:19:00.121 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:19:00.127 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.SolrIndexSearcher Opening [Searcher@59db1598[dbmysql] main]
+2020-11-10 12:19:00.128 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbmysql/conf
+2020-11-10 12:19:00.129 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:19:00.129 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:19:00.130 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:19:00.131 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975741843603456
+2020-11-10 12:19:00.136 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@59db1598[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:19:00.136 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:19:00.136 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:19:00.141 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql] Registered new searcher Searcher@59db1598[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:19:00.154 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:19:00.155 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.SolrIndexSearcher Opening [Searcher@6c0e7c48[dbmysql] main]
+2020-11-10 12:19:00.157 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6c0e7c48[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:19:00.157 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:19:00.160 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.h.SolrConfigHandler Executed config commands successfully and persited to File System [{"set-user-property":{"update.autoCreateFields":"false"}}]
+2020-11-10 12:19:00.160 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/config params={wt=javabin&version=2} status=0 QTime=812
+2020-11-10 12:19:00.161 INFO  (searcherExecutor-25-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql] Registered new searcher Searcher@6c0e7c48[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:19:00.161 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql]  CLOSING SolrCore org.apache.solr.core.SolrCore@6300cbb
+2020-11-10 12:19:00.161 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbmysql, tag=6300cbb
+2020-11-10 12:19:00.168 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@694b54b9: rootName = null, domain = solr.core.dbmysql, service url = null, agent id = null] for registry solr.core.dbmysql / com.codahale.metrics.MetricRegistry@5ea68c0a
+2020-11-10 12:19:08.462 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:08.506 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=41
+2020-11-10 12:19:08.508 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=40
+2020-11-10 12:19:11.751 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:11.764 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=3
+2020-11-10 12:19:11.769 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=9
+2020-11-10 12:19:11.776 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:19:11.799 INFO  (qtp898557489-17) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=32
+2020-11-10 12:19:11.804 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=49
+2020-11-10 12:19:25.716 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:25.738 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=19
+2020-11-10 12:19:25.773 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=58
+2020-11-10 12:19:27.217 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:27.224 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=0
+2020-11-10 12:19:27.248 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=29
+2020-11-10 12:19:27.264 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:27.272 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=4
+2020-11-10 12:19:27.283 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=19
+2020-11-10 12:19:28.746 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:28.750 INFO  (qtp898557489-14) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=3
+2020-11-10 12:19:28.805 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=60
+2020-11-10 12:19:30.429 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:30.434 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={wt=json&_=1605010770274} status=0 QTime=1
+2020-11-10 12:19:30.460 INFO  (qtp898557489-19) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1605010770274} status=0 QTime=2
+2020-11-10 12:19:30.477 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=47
+2020-11-10 12:19:32.712 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={wt=json&_=1605010559551&ts=1605010559551} hits=0 status=0 QTime=3
+2020-11-10 12:19:32.712 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={wt=json&_=1605010559551&ts=1605010559551} status=0 QTime=4
+2020-11-10 12:19:33.485 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={wt=json&_=1605010559551&ts=1605010559551} hits=0 status=0 QTime=0
+2020-11-10 12:19:33.485 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={wt=json&_=1605010559551&ts=1605010559551} status=0 QTime=1
+2020-11-10 12:19:39.907 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:39.967 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/mbeans params={stats=true&wt=json&_=1605010571708} status=0 QTime=62
+2020-11-10 12:19:39.978 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=73
+2020-11-10 12:19:42.905 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:42.997 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=92
+2020-11-10 12:19:45.506 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/select params={q=*:*&_=1605010590527} hits=0 status=0 QTime=0
+2020-11-10 12:19:51.625 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:51.628 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=1
+2020-11-10 12:19:51.654 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=26
+2020-11-10 12:19:53.801 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:53.806 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=3
+2020-11-10 12:19:53.807 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/config params={wt=json&_=1605010793635} status=0 QTime=1
+2020-11-10 12:19:53.833 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=30
+2020-11-10 12:19:53.857 INFO  (qtp898557489-19) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:19:56.449 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:56.462 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/segments params={wt=json&_=1605010796294} status=0 QTime=12
+2020-11-10 12:19:56.482 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=27
+2020-11-10 12:19:57.347 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:19:57.353 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/config params={wt=json&_=1605010793635} status=0 QTime=1
+2020-11-10 12:19:57.358 INFO  (qtp898557489-14) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=9
+2020-11-10 12:19:57.393 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:19:57.403 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=55
+2020-11-10 12:20:06.769 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:20:06.772 INFO  (qtp898557489-14) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=1
+2020-11-10 12:20:06.777 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:20:06.781 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:20:06.813 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=47
+2020-11-10 12:20:06.818 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=56
+2020-11-10 12:20:17.678 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:17.681 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605010563540&since=0} status=0 QTime=0
+2020-11-10 12:20:17.703 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=25
+2020-11-10 12:20:30.953 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:30.974 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=19
+2020-11-10 12:20:30.978 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605010563540} status=0 QTime=21
+2020-11-10 12:20:34.206 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:34.215 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=7
+2020-11-10 12:20:34.234 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=29
+2020-11-10 12:20:34.238 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:34.245 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:20:34.263 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:20:39.201 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:39.204 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:20:39.226 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=19
+2020-11-10 12:20:40.982 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:40.989 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 12:20:41.012 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=30
+2020-11-10 12:20:44.622 INFO  (qtp898557489-21) [   x:db] o.a.s.c.SolrResourceLoader [null] Added 2 libs to classloader, from paths: [/home/admininno/solr-7.7.3/example/example-DIH/solr/db/lib]
+2020-11-10 12:20:44.662 INFO  (qtp898557489-21) [   x:db] o.a.s.c.SolrResourceLoader [db] Added 53 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/contrib/velocity/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:20:44.715 INFO  (qtp898557489-21) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-11-10 12:20:44.718 INFO  (qtp898557489-21) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:20:44.785 INFO  (qtp898557489-21) [   x:db] o.a.s.s.IndexSchema [db] Schema name=example-DIH-db
+2020-11-10 12:20:45.190 INFO  (qtp898557489-21) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-11-10 12:20:45.219 INFO  (qtp898557489-21) [   x:db] o.a.s.c.CoreContainer Reloading SolrCore 'db' using configuration from instancedir /home/admininno/solr-7.7.3/example/example-DIH/solr/db
+2020-11-10 12:20:45.242 INFO  (qtp898557489-21) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:20:45.243 INFO  (qtp898557489-21) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/example/example-DIH/solr/db], dataDir=[/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/]
+2020-11-10 12:20:45.247 INFO  (qtp898557489-21) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:20:45.342 INFO  (qtp898557489-21) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:20:45.342 INFO  (qtp898557489-21) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:20:45.349 INFO  (qtp898557489-21) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@5063a98c[db] main]
+2020-11-10 12:20:45.351 INFO  (qtp898557489-21) [   x:db] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf
+2020-11-10 12:20:45.352 INFO  (qtp898557489-21) [   x:db] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:20:45.352 INFO  (qtp898557489-21) [   x:db] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:20:45.352 INFO  (qtp898557489-21) [   x:db] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-11-10 12:20:45.353 INFO  (qtp898557489-21) [   x:db] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:45.353 INFO  (qtp898557489-21) [   x:db] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:45.353 INFO  (qtp898557489-21) [   x:db] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@38f55fb6, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=true]
+2020-11-10 12:20:45.354 INFO  (qtp898557489-21) [   x:db] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf/elevate.xml
+2020-11-10 12:20:45.367 INFO  (qtp898557489-21) [   x:db] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:20:45.385 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@5063a98c[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os.arch=amd64, java.runtime.version=1.8.0_242-b08, source=flush, os.version=3.10.0-957.el7.x86_64, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:45.399 INFO  (qtp898557489-21) [   x:db] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:20:45.417 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.S.Request [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=4 status=0 QTime=31
+2020-11-10 12:20:45.419 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:45.419 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:20:45.419 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-11-10 12:20:45.419 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent Skipping first newSearcher call for suggester SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ] in core reload
+2020-11-10 12:20:45.427 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@5063a98c[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={os=Linux, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os.arch=amd64, java.runtime.version=1.8.0_242-b08, source=flush, os.version=3.10.0-957.el7.x86_64, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:45.438 INFO  (qtp898557489-21) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@ad4e6fc[db] main]
+2020-11-10 12:20:45.438 INFO  (qtp898557489-21) [   x:db] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@18f984e1
+2020-11-10 12:20:45.439 INFO  (qtp898557489-21) [   x:db] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db, tag=18f984e1
+2020-11-10 12:20:45.439 INFO  (qtp898557489-21) [   x:db] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@363ead76: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db / com.codahale.metrics.MetricRegistry@2a7559ad
+2020-11-10 12:20:45.439 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@ad4e6fc[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:45.441 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:45.441 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2020-11-10 12:20:45.441 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2020-11-10 12:20:45.461 INFO  (qtp898557489-21) [   x:db] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=db&action=RELOAD&wt=json&_=1605010559551} status=0 QTime=841
+2020-11-10 12:20:45.516 INFO  (searcherExecutor-29-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@ad4e6fc[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:46.309 INFO  (qtp898557489-20) [   x:db] o.a.s.c.SolrResourceLoader [null] Added 2 libs to classloader, from paths: [/home/admininno/solr-7.7.3/example/example-DIH/solr/db/lib]
+2020-11-10 12:20:46.354 INFO  (qtp898557489-20) [   x:db] o.a.s.c.SolrResourceLoader [db] Added 53 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/contrib/velocity/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:20:46.414 INFO  (qtp898557489-20) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-11-10 12:20:46.417 INFO  (qtp898557489-20) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:20:46.520 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:46.536 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=14
+2020-11-10 12:20:46.550 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-10 12:20:46.562 INFO  (qtp898557489-20) [   x:db] o.a.s.s.IndexSchema [db] Schema name=example-DIH-db
+2020-11-10 12:20:46.957 INFO  (qtp898557489-20) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-11-10 12:20:46.995 INFO  (qtp898557489-20) [   x:db] o.a.s.c.CoreContainer Reloading SolrCore 'db' using configuration from instancedir /home/admininno/solr-7.7.3/example/example-DIH/solr/db
+2020-11-10 12:20:47.018 INFO  (qtp898557489-20) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:20:47.018 INFO  (qtp898557489-20) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/example/example-DIH/solr/db], dataDir=[/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/]
+2020-11-10 12:20:47.021 INFO  (qtp898557489-20) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:20:47.096 INFO  (qtp898557489-20) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:20:47.096 INFO  (qtp898557489-20) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:20:47.101 INFO  (qtp898557489-20) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@201ed25c[db] main]
+2020-11-10 12:20:47.103 INFO  (qtp898557489-20) [   x:db] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf
+2020-11-10 12:20:47.103 INFO  (qtp898557489-20) [   x:db] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:20:47.103 INFO  (qtp898557489-20) [   x:db] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:20:47.104 INFO  (qtp898557489-20) [   x:db] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-11-10 12:20:47.104 INFO  (qtp898557489-20) [   x:db] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:47.104 INFO  (qtp898557489-20) [   x:db] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:47.106 INFO  (qtp898557489-20) [   x:db] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@5e253b79, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=true]
+2020-11-10 12:20:47.106 INFO  (qtp898557489-20) [   x:db] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf/elevate.xml
+2020-11-10 12:20:47.114 INFO  (qtp898557489-20) [   x:db] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:20:47.131 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@201ed25c[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.133 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.S.Request [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=4 status=0 QTime=1
+2020-11-10 12:20:47.135 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:47.135 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:20:47.135 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-11-10 12:20:47.135 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent Skipping first newSearcher call for suggester SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ] in core reload
+2020-11-10 12:20:47.167 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@201ed25c[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.181 INFO  (qtp898557489-20) [   x:db] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:20:47.193 INFO  (qtp898557489-20) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@4fdbfffc[db] main]
+2020-11-10 12:20:47.194 INFO  (qtp898557489-20) [   x:db] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@38f55fb6
+2020-11-10 12:20:47.194 INFO  (qtp898557489-20) [   x:db] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db, tag=38f55fb6
+2020-11-10 12:20:47.194 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4fdbfffc[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.194 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:47.194 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2020-11-10 12:20:47.194 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2020-11-10 12:20:47.194 INFO  (qtp898557489-20) [   x:db] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@685fb8c1: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db / com.codahale.metrics.MetricRegistry@2a7559ad
+2020-11-10 12:20:47.203 INFO  (qtp898557489-20) [   x:db] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=db&action=RELOAD&wt=json&_=1605010559551} status=0 QTime=895
+2020-11-10 12:20:47.216 INFO  (searcherExecutor-33-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@4fdbfffc[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.221 INFO  (qtp898557489-54) [   x:db] o.a.s.c.SolrResourceLoader [null] Added 2 libs to classloader, from paths: [/home/admininno/solr-7.7.3/example/example-DIH/solr/db/lib]
+2020-11-10 12:20:47.243 INFO  (qtp898557489-54) [   x:db] o.a.s.c.SolrResourceLoader [db] Added 53 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/contrib/velocity/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:20:47.279 INFO  (qtp898557489-54) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2020-11-10 12:20:47.282 INFO  (qtp898557489-54) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:20:47.348 INFO  (qtp898557489-54) [   x:db] o.a.s.s.IndexSchema [db] Schema name=example-DIH-db
+2020-11-10 12:20:47.735 INFO  (qtp898557489-54) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2020-11-10 12:20:47.771 INFO  (qtp898557489-54) [   x:db] o.a.s.c.CoreContainer Reloading SolrCore 'db' using configuration from instancedir /home/admininno/solr-7.7.3/example/example-DIH/solr/db
+2020-11-10 12:20:47.799 INFO  (qtp898557489-54) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:20:47.800 INFO  (qtp898557489-54) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/example/example-DIH/solr/db], dataDir=[/home/admininno/solr-7.7.3/example/example-DIH/solr/db/data/]
+2020-11-10 12:20:47.814 INFO  (qtp898557489-54) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:20:47.899 INFO  (qtp898557489-54) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:20:47.900 INFO  (qtp898557489-54) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:20:47.904 INFO  (qtp898557489-54) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@6c8b3927[db] main]
+2020-11-10 12:20:47.904 INFO  (qtp898557489-54) [   x:db] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf
+2020-11-10 12:20:47.905 INFO  (qtp898557489-54) [   x:db] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:20:47.908 INFO  (qtp898557489-54) [   x:db] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:20:47.908 INFO  (qtp898557489-54) [   x:db] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-11-10 12:20:47.908 INFO  (qtp898557489-54) [   x:db] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:47.909 INFO  (qtp898557489-54) [   x:db] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2020-11-10 12:20:47.909 INFO  (qtp898557489-54) [   x:db] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@781cfd91, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=true]
+2020-11-10 12:20:47.909 INFO  (qtp898557489-54) [   x:db] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/admininno/solr-7.7.3/example/example-DIH/solr/db/conf/elevate.xml
+2020-11-10 12:20:47.919 INFO  (qtp898557489-54) [   x:db] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:20:47.945 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@6c8b3927[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.949 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.S.Request [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=4 status=0 QTime=3
+2020-11-10 12:20:47.955 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:47.955 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:20:47.955 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2020-11-10 12:20:47.955 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent Skipping first newSearcher call for suggester SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ] in core reload
+2020-11-10 12:20:47.962 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@6c8b3927[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.972 INFO  (qtp898557489-54) [   x:db] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:20:47.991 INFO  (qtp898557489-54) [   x:db] o.a.s.s.SolrIndexSearcher Opening [Searcher@3659e5fa[db] main]
+2020-11-10 12:20:47.992 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@3659e5fa[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:47.992 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:47.992 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2020-11-10 12:20:47.992 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2020-11-10 12:20:47.998 INFO  (qtp898557489-54) [   x:db] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@5e253b79
+2020-11-10 12:20:47.999 INFO  (qtp898557489-54) [   x:db] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db, tag=5e253b79
+2020-11-10 12:20:47.999 INFO  (qtp898557489-54) [   x:db] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@13782bc: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db / com.codahale.metrics.MetricRegistry@2a7559ad
+2020-11-10 12:20:48.006 INFO  (qtp898557489-54) [   x:db] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=db&action=RELOAD&wt=json&_=1605010559551} status=0 QTime=786
+2020-11-10 12:20:48.010 INFO  (searcherExecutor-37-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db] Registered new searcher Searcher@3659e5fa[db] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_0(7.7.3):C16:[diagnostics={java.runtime.version=1.8.0_242-b08, java.vendor=Oracle Corporation, java.version=1.8.0_242, java.vm.version=25.242-b08, lucene.version=7.7.3, os=Linux, os.arch=amd64, os.version=3.10.0-957.el7.x86_64, source=flush, timestamp=1605010580238}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-11-10 12:20:48.237 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:48.241 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:20:48.254 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=13
+2020-11-10 12:20:49.060 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:49.068 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:20:49.082 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-10 12:20:52.022 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:52.030 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=5
+2020-11-10 12:20:52.051 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=29
+2020-11-10 12:20:53.914 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrResourceLoader [dbmysql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:20:53.979 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:20:54.062 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.IndexSchema [dbmysql] Schema name=default-config
+2020-11-10 12:20:54.407 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:20:54.433 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.CoreContainer Reloading SolrCore 'dbmysql' using configuration from instancedir /home/admininno/solr-7.7.3/dbmysql
+2020-11-10 12:20:54.452 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbmysql' (registry 'solr.core.dbmysql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:20:54.452 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrCore [[dbmysql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbmysql], dataDir=[/home/admininno/solr-7.7.3/dbmysql/data/]
+2020-11-10 12:20:54.456 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:20:54.509 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:20:54.509 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:20:54.511 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.SolrIndexSearcher Opening [Searcher@2e3a89f8[dbmysql] main]
+2020-11-10 12:20:54.512 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbmysql/conf
+2020-11-10 12:20:54.512 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:20:54.513 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:20:54.514 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:20:54.515 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975861783920640
+2020-11-10 12:20:54.520 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@2e3a89f8[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:54.520 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:54.520 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:20:54.523 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql] Registered new searcher Searcher@2e3a89f8[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:54.528 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:20:54.529 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.SolrIndexSearcher Opening [Searcher@510d4cc4[dbmysql] main]
+2020-11-10 12:20:54.529 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@510d4cc4[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:54.530 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:54.532 INFO  (searcherExecutor-41-thread-1-processing-x:dbmysql) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql] Registered new searcher Searcher@510d4cc4[dbmysql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:54.533 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql]  CLOSING SolrCore org.apache.solr.core.SolrCore@59a86caf
+2020-11-10 12:20:54.533 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbmysql, tag=59a86caf
+2020-11-10 12:20:54.533 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@72406056: rootName = null, domain = solr.core.dbmysql, service url = null, agent id = null] for registry solr.core.dbmysql / com.codahale.metrics.MetricRegistry@5ea68c0a
+2020-11-10 12:20:54.536 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=dbmysql&action=RELOAD&wt=json&_=1605010559551} status=0 QTime=644
+2020-11-10 12:20:55.580 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:55.586 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 12:20:55.602 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=19
+2020-11-10 12:20:56.352 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:56.361 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=7
+2020-11-10 12:20:56.378 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=26
+2020-11-10 12:20:57.887 INFO  (qtp898557489-14) [   x:films] o.a.s.c.SolrResourceLoader [films] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:20:57.968 INFO  (qtp898557489-14) [   x:films] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:20:58.026 INFO  (qtp898557489-14) [   x:films] o.a.s.s.IndexSchema [films] Schema name=default-config
+2020-11-10 12:20:58.314 INFO  (qtp898557489-14) [   x:films] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:20:58.334 INFO  (qtp898557489-14) [   x:films] o.a.s.c.CoreContainer Reloading SolrCore 'films' using configuration from instancedir /home/admininno/solr-7.7.3/films
+2020-11-10 12:20:58.376 INFO  (qtp898557489-14) [   x:films] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.films' (registry 'solr.core.films') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:20:58.376 INFO  (qtp898557489-14) [   x:films] o.a.s.c.SolrCore [[films] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/films], dataDir=[/home/admininno/solr-7.7.3/films/data/]
+2020-11-10 12:20:58.379 INFO  (qtp898557489-14) [   x:films] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:20:58.431 INFO  (qtp898557489-14) [   x:films] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:20:58.432 INFO  (qtp898557489-14) [   x:films] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:20:58.437 INFO  (qtp898557489-14) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@39f9b20d[films] main]
+2020-11-10 12:20:58.437 INFO  (qtp898557489-14) [   x:films] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/films/conf
+2020-11-10 12:20:58.438 INFO  (qtp898557489-14) [   x:films] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:20:58.438 INFO  (qtp898557489-14) [   x:films] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:20:58.439 INFO  (qtp898557489-14) [   x:films] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:20:58.440 INFO  (qtp898557489-14) [   x:films] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682975865899581440
+2020-11-10 12:20:58.447 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@39f9b20d[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:58.447 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:58.447 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:20:58.450 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@39f9b20d[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:58.461 INFO  (qtp898557489-14) [   x:films] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:20:58.461 INFO  (qtp898557489-14) [   x:films] o.a.s.s.SolrIndexSearcher Opening [Searcher@72dea20f[films] main]
+2020-11-10 12:20:58.462 INFO  (qtp898557489-14) [   x:films] o.a.s.c.SolrCore [films]  CLOSING SolrCore org.apache.solr.core.SolrCore@5bb5c5b6
+2020-11-10 12:20:58.462 INFO  (qtp898557489-14) [   x:films] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.films, tag=5bb5c5b6
+2020-11-10 12:20:58.462 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@72dea20f[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:58.462 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:20:58.462 INFO  (qtp898557489-14) [   x:films] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7a3fe0ea: rootName = null, domain = solr.core.films, service url = null, agent id = null] for registry solr.core.films / com.codahale.metrics.MetricRegistry@6431f83
+2020-11-10 12:20:58.466 INFO  (searcherExecutor-45-thread-1-processing-x:films) [   x:films] o.a.s.c.SolrCore [films] Registered new searcher Searcher@72dea20f[films] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:20:58.473 INFO  (qtp898557489-14) [   x:films] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=films&action=RELOAD&wt=json&_=1605010559551} status=0 QTime=612
+2020-11-10 12:20:59.514 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:20:59.521 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=5
+2020-11-10 12:20:59.539 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=25
+2020-11-10 12:21:03.113 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:03.118 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:21:03.141 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=27
+2020-11-10 12:21:05.968 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:05.973 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:21:05.988 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:21:06.786 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:06.794 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=6
+2020-11-10 12:21:06.810 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=24
+2020-11-10 12:21:07.495 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:07.505 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:21:07.515 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:21:09.054 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:09.057 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/properties params={wt=json&_=1605010868897} status=0 QTime=0
+2020-11-10 12:21:09.075 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=21
+2020-11-10 12:21:11.326 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:11.370 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=44
+2020-11-10 12:21:11.374 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/threads params={wt=json&_=1605010871169} status=0 QTime=45
+2020-11-10 12:21:24.049 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:21:24.051 INFO  (qtp898557489-12) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:21:24.055 INFO  (qtp898557489-19) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=6
+2020-11-10 12:21:24.056 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=6
+2020-11-10 12:21:24.083 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=37
+2020-11-10 12:21:24.093 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=44
+2020-11-10 12:21:25.260 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:25.264 INFO  (qtp898557489-14) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=3
+2020-11-10 12:21:25.299 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=36
+2020-11-10 12:21:26.552 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:21:26.560 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:21:26.564 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=2
+2020-11-10 12:21:26.565 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:21:26.586 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=31
+2020-11-10 12:21:26.586 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=23
+2020-11-10 12:22:06.870 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:06.875 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:22:06.890 INFO  (qtp898557489-12) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:22:06.907 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:06.910 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:22:06.935 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=28
+2020-11-10 12:22:10.613 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:10.617 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:22:10.637 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=24
+2020-11-10 12:22:17.422 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:17.427 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:22:17.450 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=28
+2020-11-10 12:22:18.410 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:18.416 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:22:18.443 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=33
+2020-11-10 12:22:19.316 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:19.329 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 12:22:19.346 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=30
+2020-11-10 12:22:20.452 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:20.460 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=7
+2020-11-10 12:22:20.481 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=25
+2020-11-10 12:22:21.556 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:21.558 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=2
+2020-11-10 12:22:21.579 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-10 12:22:23.858 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:23.869 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:22:23.870 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=2
+2020-11-10 12:22:23.877 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=0
+2020-11-10 12:22:23.898 INFO  (qtp898557489-17) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=33
+2020-11-10 12:22:23.901 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=41
+2020-11-10 12:22:25.392 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:25.395 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=0
+2020-11-10 12:22:25.418 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:22:25.420 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=24
+2020-11-10 12:22:25.421 INFO  (qtp898557489-35) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=0
+2020-11-10 12:22:25.453 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=25
+2020-11-10 12:25:41.020 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:41.029 INFO  (qtp898557489-15) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=6
+2020-11-10 12:25:41.050 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=28
+2020-11-10 12:25:43.624 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:43.627 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={wt=json&_=1605010770274} status=0 QTime=0
+2020-11-10 12:25:43.642 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1605010770274} status=0 QTime=2
+2020-11-10 12:25:43.651 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=26
+2020-11-10 12:25:44.643 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:44.651 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=6
+2020-11-10 12:25:44.674 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=26
+2020-11-10 12:25:45.961 INFO  (qtp898557489-19) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={wt=json&_=1605010770274} status=0 QTime=1
+2020-11-10 12:25:45.963 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:45.973 INFO  (qtp898557489-17) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/file params={file=lang&wt=json&_=1605010770274} status=0 QTime=2
+2020-11-10 12:25:45.985 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-10 12:25:49.187 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:49.190 INFO  (qtp898557489-14) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=1
+2020-11-10 12:25:49.198 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:25:49.200 INFO  (qtp898557489-18) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=7
+2020-11-10 12:25:49.217 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=29
+2020-11-10 12:25:49.224 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=28
+2020-11-10 12:25:52.897 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:25:52.915 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=18
+2020-11-10 12:25:55.104 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/select params={q=*:*&_=1605010590527} hits=16 status=0 QTime=1
+2020-11-10 12:33:28.396 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=39
+2020-11-10 12:33:28.505 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=77
+2020-11-10 12:33:28.518 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=dbpgsql&action=STATUS&wt=json} status=0 QTime=0
+2020-11-10 12:33:28.555 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.h.a.CoreAdminOperation core create command name=dbpgsql&action=CREATE&instanceDir=dbpgsql&wt=json
+2020-11-10 12:33:28.575 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.c.SolrResourceLoader [dbpgsql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:33:28.608 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:33:28.662 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.s.IndexSchema [dbpgsql] Schema name=default-config
+2020-11-10 12:33:28.982 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:33:29.004 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.c.CoreContainer Creating SolrCore 'dbpgsql' using configuration from instancedir /home/admininno/solr-7.7.3/dbpgsql, trusted=true
+2020-11-10 12:33:29.005 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbpgsql' (registry 'solr.core.dbpgsql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:33:29.006 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.c.SolrCore [[dbpgsql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbpgsql], dataDir=[/home/admininno/solr-7.7.3/dbpgsql/data/]
+2020-11-10 12:33:29.091 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:33:29.141 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:33:29.141 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:33:29.144 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:33:29.144 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:33:29.148 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.s.SolrIndexSearcher Opening [Searcher@507451e0[dbpgsql] main]
+2020-11-10 12:33:29.149 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbpgsql/conf
+2020-11-10 12:33:29.150 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:33:29.150 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:33:29.152 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:33:29.152 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682976653078167552
+2020-11-10 12:33:29.155 INFO  (searcherExecutor-49-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@507451e0[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:29.155 INFO  (searcherExecutor-49-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:33:29.155 INFO  (searcherExecutor-49-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:33:29.157 INFO  (searcherExecutor-49-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.SolrCore [dbpgsql] Registered new searcher Searcher@507451e0[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:29.158 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=dbpgsql&action=CREATE&instanceDir=dbpgsql&wt=json} status=0 QTime=603
+2020-11-10 12:33:38.747 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.SolrResourceLoader Written confile configoverlay.json
+2020-11-10 12:33:38.802 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.SolrResourceLoader [dbpgsql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:33:38.867 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:33:38.910 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.IndexSchema [dbpgsql] Schema name=default-config
+2020-11-10 12:33:39.203 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:33:39.221 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.CoreContainer Reloading SolrCore 'dbpgsql' using configuration from instancedir /home/admininno/solr-7.7.3/dbpgsql
+2020-11-10 12:33:39.267 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbpgsql' (registry 'solr.core.dbpgsql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:33:39.267 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.SolrCore [[dbpgsql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbpgsql], dataDir=[/home/admininno/solr-7.7.3/dbpgsql/data/]
+2020-11-10 12:33:39.271 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:33:39.319 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:33:39.319 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:33:39.322 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.SolrIndexSearcher Opening [Searcher@277a0d0f[dbpgsql] main]
+2020-11-10 12:33:39.323 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbpgsql/conf
+2020-11-10 12:33:39.323 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:33:39.324 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:33:39.325 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:33:39.325 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682976663745331200
+2020-11-10 12:33:39.331 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@277a0d0f[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:39.331 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:33:39.331 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:33:39.333 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.SolrCore [dbpgsql] Registered new searcher Searcher@277a0d0f[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:39.338 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:33:39.339 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.s.SolrIndexSearcher Opening [Searcher@57f3d34[dbpgsql] main]
+2020-11-10 12:33:39.340 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@57f3d34[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:39.340 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:33:39.342 INFO  (searcherExecutor-54-thread-1-processing-x:dbpgsql) [   x:dbpgsql] o.a.s.c.SolrCore [dbpgsql] Registered new searcher Searcher@57f3d34[dbpgsql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:39.343 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.h.SolrConfigHandler Executed config commands successfully and persited to File System [{"set-user-property":{"update.autoCreateFields":"false"}}]
+2020-11-10 12:33:39.343 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.S.Request [dbpgsql]  webapp=/solr path=/config params={wt=javabin&version=2} status=0 QTime=601
+2020-11-10 12:33:39.343 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.c.SolrCore [dbpgsql]  CLOSING SolrCore org.apache.solr.core.SolrCore@33f3f06
+2020-11-10 12:33:39.343 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbpgsql, tag=33f3f06
+2020-11-10 12:33:39.343 INFO  (qtp898557489-18) [   x:dbpgsql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7fb8a62f: rootName = null, domain = solr.core.dbpgsql, service url = null, agent id = null] for registry solr.core.dbpgsql / com.codahale.metrics.MetricRegistry@5021933
+2020-11-10 12:33:57.920 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=9
+2020-11-10 12:33:57.966 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=10
+2020-11-10 12:33:57.975 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={core=dbmssql&action=STATUS&wt=json} status=0 QTime=0
+2020-11-10 12:33:58.023 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.h.a.CoreAdminOperation core create command name=dbmssql&action=CREATE&instanceDir=dbmssql&wt=json
+2020-11-10 12:33:58.035 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.SolrResourceLoader [dbmssql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:33:58.068 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:33:58.116 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.s.IndexSchema [dbmssql] Schema name=default-config
+2020-11-10 12:33:58.436 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:33:58.455 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.CoreContainer Creating SolrCore 'dbmssql' using configuration from instancedir /home/admininno/solr-7.7.3/dbmssql, trusted=true
+2020-11-10 12:33:58.455 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbmssql' (registry 'solr.core.dbmssql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:33:58.456 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.SolrCore [[dbmssql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbmssql], dataDir=[/home/admininno/solr-7.7.3/dbmssql/data/]
+2020-11-10 12:33:58.557 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:33:58.608 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-11-10 12:33:58.608 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-11-10 12:33:58.611 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:33:58.612 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:33:58.616 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.s.SolrIndexSearcher Opening [Searcher@77b41ab9[dbmssql] main]
+2020-11-10 12:33:58.617 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbmssql/conf
+2020-11-10 12:33:58.617 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:33:58.618 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:33:58.619 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:33:58.620 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682976683977605120
+2020-11-10 12:33:58.623 INFO  (searcherExecutor-58-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@77b41ab9[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:58.623 INFO  (searcherExecutor-58-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:33:58.623 INFO  (searcherExecutor-58-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:33:58.624 INFO  (searcherExecutor-58-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.SolrCore [dbmssql] Registered new searcher Searcher@77b41ab9[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:33:58.626 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={name=dbmssql&action=CREATE&instanceDir=dbmssql&wt=json} status=0 QTime=603
+2020-11-10 12:34:09.358 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.SolrResourceLoader Written confile configoverlay.json
+2020-11-10 12:34:09.399 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.SolrResourceLoader [dbmssql] Added 54 libs to classloader, from paths: [/home/admininno/solr-7.7.3/contrib/clustering/lib, /home/admininno/solr-7.7.3/contrib/extraction/lib, /home/admininno/solr-7.7.3/contrib/langid/lib, /home/admininno/solr-7.7.3/dist]
+2020-11-10 12:34:09.432 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.SolrConfig Using Lucene MatchVersion: 7.7.3
+2020-11-10 12:34:09.500 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.IndexSchema [dbmssql] Schema name=default-config
+2020-11-10 12:34:09.817 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-11-10 12:34:09.834 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.CoreContainer Reloading SolrCore 'dbmssql' using configuration from instancedir /home/admininno/solr-7.7.3/dbmssql
+2020-11-10 12:34:09.852 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.dbmssql' (registry 'solr.core.dbmssql') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@6385cb26
+2020-11-10 12:34:09.853 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.SolrCore [[dbmssql] ] Opening new SolrCore at [/home/admininno/solr-7.7.3/dbmssql], dataDir=[/home/admininno/solr-7.7.3/dbmssql/data/]
+2020-11-10 12:34:09.862 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2020-11-10 12:34:09.915 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-11-10 12:34:09.915 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-11-10 12:34:09.918 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.SolrIndexSearcher Opening [Searcher@4439fe69[dbmssql] main]
+2020-11-10 12:34:09.919 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/admininno/solr-7.7.3/dbmssql/conf
+2020-11-10 12:34:09.919 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-11-10 12:34:09.919 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-11-10 12:34:09.921 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-11-10 12:34:09.922 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1682976695828611072
+2020-11-10 12:34:09.926 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@4439fe69[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:34:09.926 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:34:09.926 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-11-10 12:34:09.929 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.SolrCore [dbmssql] Registered new searcher Searcher@4439fe69[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:34:09.934 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 12:34:09.935 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.s.SolrIndexSearcher Opening [Searcher@1c67a818[dbmssql] main]
+2020-11-10 12:34:09.936 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@1c67a818[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:34:09.936 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-11-10 12:34:09.938 INFO  (searcherExecutor-63-thread-1-processing-x:dbmssql) [   x:dbmssql] o.a.s.c.SolrCore [dbmssql] Registered new searcher Searcher@1c67a818[dbmssql] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-11-10 12:34:09.939 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.h.SolrConfigHandler Executed config commands successfully and persited to File System [{"set-user-property":{"update.autoCreateFields":"false"}}]
+2020-11-10 12:34:09.939 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/config params={wt=javabin&version=2} status=0 QTime=585
+2020-11-10 12:34:09.939 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.SolrCore [dbmssql]  CLOSING SolrCore org.apache.solr.core.SolrCore@6ef4a345
+2020-11-10 12:34:09.939 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbmssql, tag=6ef4a345
+2020-11-10 12:34:09.939 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2265d294: rootName = null, domain = solr.core.dbmssql, service url = null, agent id = null] for registry solr.core.dbmssql / com.codahale.metrics.MetricRegistry@174f36bd
+2020-11-10 12:34:13.639 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:13.662 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:34:13.685 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=17
+2020-11-10 12:34:17.233 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:17.257 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=25
+2020-11-10 12:34:17.259 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=17
+2020-11-10 12:34:17.262 INFO  (qtp898557489-35) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=18
+2020-11-10 12:34:17.266 INFO  (qtp898557489-14) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=24
+2020-11-10 12:34:17.279 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=21
+2020-11-10 12:34:19.049 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:19.054 INFO  (qtp898557489-20) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:34:19.054 INFO  (qtp898557489-17) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:34:19.056 INFO  (qtp898557489-77) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=1
+2020-11-10 12:34:19.080 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=30
+2020-11-10 12:34:19.088 INFO  (qtp898557489-21) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=33
+2020-11-10 12:34:20.614 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:20.620 INFO  (qtp898557489-19) [   x:dbpgsql] o.a.s.c.S.Request [dbpgsql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=3
+2020-11-10 12:34:20.626 INFO  (qtp898557489-20) [   x:dbpgsql] o.a.s.c.S.Request [dbpgsql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=9
+2020-11-10 12:34:20.627 INFO  (qtp898557489-17) [   x:dbpgsql] o.a.s.c.S.Request [dbpgsql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:34:20.643 INFO  (qtp898557489-14) [   x:dbpgsql] o.a.s.c.S.Request [dbpgsql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=25
+2020-11-10 12:34:20.661 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=40
+2020-11-10 12:34:22.502 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:22.508 INFO  (qtp898557489-35) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=4
+2020-11-10 12:34:22.509 INFO  (qtp898557489-20) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=0
+2020-11-10 12:34:22.510 INFO  (qtp898557489-19) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=2
+2020-11-10 12:34:22.545 INFO  (qtp898557489-54) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=42
+2020-11-10 12:34:22.550 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=49
+2020-11-10 12:34:27.427 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:27.436 INFO  (qtp898557489-18) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605010567801} status=0 QTime=7
+2020-11-10 12:34:27.468 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=41
+2020-11-10 12:34:28.998 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:28.998 INFO  (qtp898557489-35) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=0
+2020-11-10 12:34:29.019 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:29.024 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=23
+2020-11-10 12:34:29.025 INFO  (qtp898557489-14) [   x:films] o.a.s.c.S.Request [films]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605010571708} status=0 QTime=3
+2020-11-10 12:34:29.056 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=27
+2020-11-10 12:34:31.274 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:31.285 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=8
+2020-11-10 12:34:31.292 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=18
+2020-11-10 12:34:31.311 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:31.316 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:34:31.328 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=16
+2020-11-10 12:34:33.673 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:33.680 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:34:33.737 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=65
+2020-11-10 12:34:33.747 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:33.752 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 12:34:33.768 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=19
+2020-11-10 12:34:34.402 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:34.407 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:34:34.426 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=24
+2020-11-10 12:34:34.431 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:34.434 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 12:34:34.474 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=41
+2020-11-10 12:34:51.293 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:51.301 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=6
+2020-11-10 12:34:51.316 INFO  (qtp898557489-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=23
+2020-11-10 12:34:53.137 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:34:53.141 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 12:34:53.158 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=18
+2020-11-10 12:35:37.770 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:35:37.777 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:35:37.780 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=1
+2020-11-10 12:35:37.786 INFO  (qtp898557489-14) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=11
+2020-11-10 12:35:37.800 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=27
+2020-11-10 12:35:37.809 INFO  (qtp898557489-77) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=25
+2020-11-10 12:35:40.089 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 12:35:40.096 INFO  (qtp898557489-17) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=0
+2020-11-10 12:35:40.098 INFO  (qtp898557489-17) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=0
+2020-11-10 12:35:40.100 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=0
+2020-11-10 12:35:40.110 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=20
+2020-11-10 12:35:40.130 INFO  (qtp898557489-35) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=39
+2020-11-10 16:13:20.108 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=50
+2020-11-10 16:13:20.204 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=147
+2020-11-10 16:13:20.225 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=13
+2020-11-10 16:13:24.029 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 16:13:24.040 INFO  (qtp898557489-15) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=1
+2020-11-10 16:13:24.049 INFO  (qtp898557489-21) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=1
+2020-11-10 16:13:24.052 INFO  (qtp898557489-77) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=3
+2020-11-10 16:13:24.071 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=40
+2020-11-10 16:13:24.072 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=28
+2020-11-10 16:13:26.155 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 16:13:26.159 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605010567801} status=0 QTime=1
+2020-11-10 16:13:26.165 INFO  (qtp898557489-14) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605010559551&ts=1605010559551} status=503 QTime=5
+2020-11-10 16:13:26.168 INFO  (qtp898557489-18) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605010567801} status=0 QTime=1
+2020-11-10 16:13:26.186 INFO  (qtp898557489-54) [   x:dbmysql] o.a.s.c.S.Request [dbmysql]  webapp=/solr path=/admin/system params={wt=json&_=1605010567801} status=0 QTime=26
+2020-11-10 16:13:26.194 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=39
+2020-11-10 16:13:48.986 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 16:13:48.991 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-10 16:13:49.009 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-10 16:13:49.034 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-10 16:13:49.037 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=4
+2020-11-10 16:13:49.054 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=21
+2020-11-10 16:28:37.057 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025716700} status=0 QTime=0
+2020-11-10 16:28:37.083 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025716701} status=0 QTime=26
+2020-11-10 16:28:37.083 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025716701} status=0 QTime=24
+2020-11-10 16:28:43.442 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:43.459 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=16
+2020-11-10 16:28:43.461 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=19
+2020-11-10 16:28:45.869 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:45.873 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605025725591&since=0} status=0 QTime=1
+2020-11-10 16:28:45.893 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=20
+2020-11-10 16:28:48.600 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:48.605 INFO  (qtp898557489-35) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605025723090&ts=1605025723090} status=503 QTime=0
+2020-11-10 16:28:48.608 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605025728327} status=0 QTime=0
+2020-11-10 16:28:48.608 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605025728327} status=0 QTime=0
+2020-11-10 16:28:48.629 INFO  (qtp898557489-21) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/system params={wt=json&_=1605025728327} status=0 QTime=23
+2020-11-10 16:28:48.630 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=20
+2020-11-10 16:28:51.253 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:51.257 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1605025728327} status=0 QTime=1
+2020-11-10 16:28:51.258 INFO  (qtp898557489-35) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605025728327} status=0 QTime=2
+2020-11-10 16:28:51.264 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605025723090&ts=1605025723090} status=503 QTime=1
+2020-11-10 16:28:51.290 INFO  (qtp898557489-18) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1605025728327} status=0 QTime=34
+2020-11-10 16:28:51.293 INFO  (qtp898557489-14) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=40
+2020-11-10 16:28:52.317 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:52.331 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={show=schema&wt=json&_=1605025728327} status=0 QTime=12
+2020-11-10 16:28:52.337 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=21
+2020-11-10 16:28:53.901 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:53.904 INFO  (qtp898557489-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605025733624} status=0 QTime=1
+2020-11-10 16:28:53.912 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=11
+2020-11-10 16:28:53.949 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:28:53.951 INFO  (qtp898557489-14) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605025733624} status=0 QTime=0
+2020-11-10 16:28:53.962 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=13
+2020-11-10 16:28:54.007 INFO  (qtp898557489-18) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1605025733624} status=0 QTime=57
+2020-11-10 16:28:54.019 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:28:56.992 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:28:57.899 INFO  (qtp898557489-82) [   x:db] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-11-10 16:28:57.952 INFO  (qtp898557489-82) [   x:db] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-11-10 16:28:57.953 INFO  (qtp898557489-82) [   x:db] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-11-10 16:28:57.956 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1605025733624&verbose=true} status=0 QTime=58
+2020-11-10 16:28:57.958 INFO  (Thread-20) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-11-10 16:28:57.971 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:28:58.032 INFO  (Thread-20) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-11-10 16:28:58.123 INFO  (Thread-20) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity item with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-10 16:28:59.009 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:01.021 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:03.024 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:05.030 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:06.000 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1605025733624&verbose=true} status=0 QTime=0
+2020-11-10 16:29:06.014 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:07.033 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:09.046 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:11.064 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:13.073 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:15.081 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:17.091 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:19.101 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:19.233 ERROR (Thread-20) [   ] o.a.s.h.d.DocBuilder Exception while processing: item document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-10 16:29:18 heartbeat - read: -8889 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:192)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:528)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:317)
+	... 14 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-10 16:29:18 heartbeat - read: -8889 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 21 more
+
+2020-11-10 16:29:19.234 INFO  (Thread-20) [   ] o.a.s.u.p.LogUpdateProcessorFactory [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=false&wt=json&command=full-import&_=1605025733624&verbose=true} status=0 QTime=58{} 0 21336
+2020-11-10 16:29:19.235 ERROR (Thread-20) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-10 16:29:18 heartbeat - read: -8889 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:192)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:528)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:317)
+	... 14 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-10 16:29:18 heartbeat - read: -8889 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 21 more
+
+2020-11-10 16:29:19.262 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-11-10 16:29:19.291 INFO  (Thread-20) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-10 16:29:19.291 INFO  (Thread-20) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-11-10 16:29:21.113 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:23.119 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:25.133 INFO  (qtp898557489-82) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:27.136 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605025733624} status=0 QTime=0
+2020-11-10 16:29:27.739 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605025723089} status=0 QTime=0
+2020-11-10 16:29:27.763 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=24
+2020-11-10 16:29:27.770 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605025723090} status=0 QTime=25
+2020-11-10 16:34:48.082 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605026087730} status=0 QTime=0
+2020-11-10 16:34:48.119 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605026087731} status=0 QTime=35
+2020-11-10 16:34:48.121 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605026087731} status=0 QTime=20
+2020-11-10 16:34:50.377 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605026090038} status=0 QTime=0
+2020-11-10 16:34:50.391 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605026090038} status=0 QTime=15
+2020-11-10 16:34:50.398 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605026090038} status=0 QTime=22
+2020-11-11 02:58:24.628 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063504577} status=0 QTime=2
+2020-11-11 02:58:24.663 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063504578} status=0 QTime=34
+2020-11-11 02:58:24.715 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063504578} status=0 QTime=39
+2020-11-11 02:58:33.585 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:58:33.609 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=19
+2020-11-11 02:58:33.612 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=21
+2020-11-11 02:58:39.226 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:58:39.233 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605063519512&since=0} status=0 QTime=6
+2020-11-11 02:58:39.250 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=25
+2020-11-11 02:58:49.242 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605063519512&since=0} status=0 QTime=0
+2020-11-11 02:58:59.257 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605063519512&since=0} status=0 QTime=0
+2020-11-11 02:59:09.287 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605063519512&since=0} status=0 QTime=0
+2020-11-11 02:59:09.594 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:09.600 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=3
+2020-11-11 02:59:09.611 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=17
+2020-11-11 02:59:09.800 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:09.811 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=4
+2020-11-11 02:59:09.828 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=27
+2020-11-11 02:59:11.905 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:11.915 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=8
+2020-11-11 02:59:11.928 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=22
+2020-11-11 02:59:13.068 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:13.069 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=4
+2020-11-11 02:59:13.086 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=21
+2020-11-11 02:59:13.989 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:14.004 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=9
+2020-11-11 02:59:14.014 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=25
+2020-11-11 02:59:14.631 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:14.640 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=4
+2020-11-11 02:59:14.651 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=19
+2020-11-11 02:59:15.080 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:15.086 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605063513792} status=0 QTime=3
+2020-11-11 02:59:15.110 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=30
+2020-11-11 02:59:19.972 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 02:59:19.981 INFO  (qtp898557489-21) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605063560235} status=0 QTime=2
+2020-11-11 02:59:19.984 INFO  (qtp898557489-35) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605063513792&ts=1605063513792} status=503 QTime=2
+2020-11-11 02:59:19.987 INFO  (qtp898557489-18) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/replication params={wt=json&command=details&_=1605063560235} status=0 QTime=13
+2020-11-11 02:59:20.011 INFO  (qtp898557489-19) [   x:dbmssql] o.a.s.c.S.Request [dbmssql]  webapp=/solr path=/admin/system params={wt=json&_=1605063560235} status=0 QTime=34
+2020-11-11 02:59:20.022 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=48
+2020-11-11 03:25:09.363 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605063513792} status=0 QTime=0
+2020-11-11 03:25:09.392 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=24
+2020-11-11 03:25:09.392 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605063513792} status=0 QTime=26
+2020-11-11 03:45:51.434 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605066351654} status=0 QTime=0
+2020-11-11 03:45:51.465 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605066351655} status=0 QTime=23
+2020-11-11 03:45:51.492 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605066351655} status=0 QTime=17
+2020-11-11 04:53:41.390 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605070421477} status=0 QTime=0
+2020-11-11 04:53:41.405 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605070421478} status=0 QTime=14
+2020-11-11 04:53:41.428 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605070421478} status=0 QTime=11
+2020-11-11 05:26:16.345 INFO  (qtp898557489-77) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605010559551} status=0 QTime=0
+2020-11-11 05:26:16.351 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1605010559551} status=0 QTime=3
+2020-11-11 05:26:16.366 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605010559551} status=0 QTime=22
+2020-11-12 06:49:49.777 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605163789545} status=0 QTime=9
+2020-11-12 06:49:49.871 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=95
+2020-11-12 06:49:49.892 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=16
+2020-11-12 06:52:23.616 INFO  (qtp898557489-35) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605163789545} status=0 QTime=0
+2020-11-12 06:52:23.673 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1605163789545&ts=1605163789545} status=503 QTime=30
+2020-11-12 06:52:23.681 INFO  (qtp898557489-35) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1605163943558} status=0 QTime=57
+2020-11-12 06:52:23.683 INFO  (qtp898557489-77) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1605163943558} status=0 QTime=38
+2020-11-12 06:52:23.697 INFO  (qtp898557489-82) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=74
+2020-11-12 06:52:23.702 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1605163943558} status=0 QTime=57
+2020-11-12 06:52:26.638 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605163789545} status=0 QTime=0
+2020-11-12 06:52:26.661 INFO  (qtp898557489-54) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605163946574} status=0 QTime=22
+2020-11-12 06:52:26.663 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=23
+2020-11-12 06:52:26.687 INFO  (qtp898557489-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605163789545} status=0 QTime=0
+2020-11-12 06:52:26.689 INFO  (qtp898557489-35) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1605163946574} status=0 QTime=0
+2020-11-12 06:52:26.705 INFO  (qtp898557489-17) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=17
+2020-11-12 06:52:26.712 INFO  (qtp898557489-21) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1605163946575} status=0 QTime=23
+2020-11-12 06:52:26.729 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:31.352 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:32.536 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2020-11-12 06:52:32.540 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.c.DIHConfiguration id is a required field in SolrSchema . But not found in DataConfig
+2020-11-12 06:52:32.540 INFO  (qtp898557489-19) [   x:db] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2020-11-12 06:52:32.541 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1605163946575&verbose=true} status=0 QTime=5
+2020-11-12 06:52:32.544 INFO  (Thread-22) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2020-11-12 06:52:32.571 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:32.586 INFO  (Thread-22) [   ] o.a.s.h.d.SimplePropertiesWriter Read dataimport.properties
+2020-11-12 06:52:32.642 INFO  (Thread-22) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@35049049[db] realtime]
+2020-11-12 06:52:32.878 INFO  (Thread-22) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@30edffda[db] realtime]
+2020-11-12 06:52:32.902 INFO  (Thread-22) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity item with URL: jdbc:hsqldb:/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex
+2020-11-12 06:52:33.365 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:35.358 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:37.367 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:39.363 INFO  (qtp898557489-15) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:41.352 INFO  (qtp898557489-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1605163946575} status=0 QTime=0
+2020-11-12 06:52:42.128 INFO  (qtp898557489-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1605163789545} status=0 QTime=0
+2020-11-12 06:52:42.140 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605163962071&since=0} status=0 QTime=10
+2020-11-12 06:52:42.157 INFO  (qtp898557489-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1605163789545} status=0 QTime=19
+2020-11-12 06:52:47.918 INFO  (commitScheduler-39-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-11-12 06:52:47.918 INFO  (commitScheduler-39-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@60c3842e commitCommandVersion:0
+2020-11-12 06:52:48.019 INFO  (commitScheduler-39-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@6a3bef5e[db] realtime]
+2020-11-12 06:52:48.020 INFO  (commitScheduler-39-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-11-12 06:52:52.138 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605163962071&since=0} status=0 QTime=0
+2020-11-12 06:52:53.439 ERROR (Thread-22) [   ] o.a.s.h.d.DocBuilder Exception while processing: item document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-12 06:52:52 heartbeat - read: -3134 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:192)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:528)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:317)
+	... 14 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-12 06:52:52 heartbeat - read: -3134 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 21 more
+
+2020-11-12 06:52:53.439 INFO  (Thread-22) [   ] o.a.s.u.p.LogUpdateProcessorFactory [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=true&name=dataimport&clean=true&wt=json&command=full-import&_=1605163946575&verbose=true} status=0 QTime=5{deleteByQuery=*:* (-1683136396748914688)} 0 20903
+2020-11-12 06:52:53.440 ERROR (Thread-22) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:271)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:424)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:483)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:466)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:417)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:330)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:233)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from item Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:327)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:288)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:283)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:267)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:476)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:415)
+	... 6 more
+Caused by: java.sql.SQLException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-12 06:52:52 heartbeat - read: -3134 ms.
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCUtil.sqlException(Unknown Source)
+	at org.hsqldb.jdbc.JDBCConnection.<init>(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.getConnection(Unknown Source)
+	at org.hsqldb.jdbc.JDBCDriver.connect(Unknown Source)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:192)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:528)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:317)
+	... 14 more
+Caused by: org.hsqldb.HsqlException: Database lock acquisition failure: lockFile: org.hsqldb.persist.LockFile@42fbc967[file =/home/admininno/solr-7.7.3/example/example-DIH/hsqldb/ex.lck, exists=true, locked=false, valid=false, ] method: checkHeartbeat read: 2020-11-12 06:52:52 heartbeat - read: -3134 ms.
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.error.Error.error(Unknown Source)
+	at org.hsqldb.persist.LockFile.newLockFileLock(Unknown Source)
+	at org.hsqldb.persist.Logger.acquireLock(Unknown Source)
+	at org.hsqldb.persist.Logger.open(Unknown Source)
+	at org.hsqldb.Database.reopen(Unknown Source)
+	at org.hsqldb.Database.open(Unknown Source)
+	at org.hsqldb.DatabaseManager.getDatabase(Unknown Source)
+	at org.hsqldb.DatabaseManager.newSession(Unknown Source)
+	... 21 more
+
+2020-11-12 06:52:53.455 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2020-11-12 06:52:53.457 INFO  (Thread-22) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2020-11-12 06:52:53.458 INFO  (Thread-22) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2020-11-12 06:53:02.139 INFO  (qtp898557489-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605163962071&since=0} status=0 QTime=0
+2020-11-12 06:53:12.141 INFO  (qtp898557489-54) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1605163962071&since=0} status=0 QTime=0
+2020-11-12 06:53:18.537 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@167559f3{HTTP/1.1,[http/1.1]}{0.0.0.0:8983}
+2020-11-12 06:53:18.537 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-11-12 06:53:18.539 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1989811701
+2020-11-12 06:53:18.541 INFO  (coreCloseExecutor-67-thread-1) [   x:films] o.a.s.c.SolrCore [films]  CLOSING SolrCore org.apache.solr.core.SolrCore@6d1e9e08
+2020-11-12 06:53:18.541 INFO  (coreCloseExecutor-67-thread-1) [   x:films] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.films, tag=6d1e9e08
+2020-11-12 06:53:18.541 INFO  (coreCloseExecutor-67-thread-1) [   x:films] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@64d1f2ec: rootName = null, domain = solr.core.films, service url = null, agent id = null] for registry solr.core.films / com.codahale.metrics.MetricRegistry@6431f83
+2020-11-12 06:53:18.543 INFO  (coreCloseExecutor-67-thread-3) [   x:dbmysql] o.a.s.c.SolrCore [dbmysql]  CLOSING SolrCore org.apache.solr.core.SolrCore@5a236244
+2020-11-12 06:53:18.545 INFO  (coreCloseExecutor-67-thread-4) [   x:dbpgsql] o.a.s.c.SolrCore [dbpgsql]  CLOSING SolrCore org.apache.solr.core.SolrCore@28e5e9a5
+2020-11-12 06:53:18.545 INFO  (coreCloseExecutor-67-thread-2) [   x:db] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@781cfd91
+2020-11-12 06:53:18.551 INFO  (coreCloseExecutor-67-thread-5) [   x:dbmssql] o.a.s.c.SolrCore [dbmssql]  CLOSING SolrCore org.apache.solr.core.SolrCore@739a2615
+2020-11-12 06:53:18.555 INFO  (coreCloseExecutor-67-thread-3) [   x:dbmysql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbmysql, tag=5a236244
+2020-11-12 06:53:18.556 INFO  (coreCloseExecutor-67-thread-3) [   x:dbmysql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@4e7f2c2f: rootName = null, domain = solr.core.dbmysql, service url = null, agent id = null] for registry solr.core.dbmysql / com.codahale.metrics.MetricRegistry@5ea68c0a
+2020-11-12 06:53:18.562 INFO  (coreCloseExecutor-67-thread-4) [   x:dbpgsql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbpgsql, tag=28e5e9a5
+2020-11-12 06:53:18.562 INFO  (coreCloseExecutor-67-thread-4) [   x:dbpgsql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5ca73ad7: rootName = null, domain = solr.core.dbpgsql, service url = null, agent id = null] for registry solr.core.dbpgsql / com.codahale.metrics.MetricRegistry@5021933
+2020-11-12 06:53:18.579 INFO  (coreCloseExecutor-67-thread-2) [   x:db] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db, tag=781cfd91
+2020-11-12 06:53:18.579 INFO  (coreCloseExecutor-67-thread-2) [   x:db] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@136c1760: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db / com.codahale.metrics.MetricRegistry@2a7559ad
+2020-11-12 06:53:18.610 INFO  (coreCloseExecutor-67-thread-5) [   x:dbmssql] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.dbmssql, tag=739a2615
+2020-11-12 06:53:18.610 INFO  (coreCloseExecutor-67-thread-5) [   x:dbmssql] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@d951c3f: rootName = null, domain = solr.core.dbmssql, service url = null, agent id = null] for registry solr.core.dbmssql / com.codahale.metrics.MetricRegistry@174f36bd
+2020-11-12 06:53:18.656 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-11-12 06:53:18.656 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7a560583: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@41ce5b20
+2020-11-12 06:53:18.659 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-11-12 06:53:18.659 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2101b44a: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@74b8c32d
+2020-11-12 06:53:18.660 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-11-12 06:53:18.660 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@2cc3ad05: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@4209317c
+2020-11-12 06:53:18.709 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@45b4c3a9{/solr,null,UNAVAILABLE}{/home/admininno/solr-7.7.3/server/solr-webapp/webapp}
